@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11527" started-at="2019-09-29T19:29:39Z" finished-at="2019-09-29T19:29:51Z">
+  <suite name="Default suite" duration-ms="11978" started-at="2019-10-09T01:00:38Z" finished-at="2019-10-09T01:00:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11527" started-at="2019-09-29T19:29:39Z" finished-at="2019-09-29T19:29:51Z">
-      <class name="com.sstech.TestCase.TestLogInFuctionality">
-        <test-method status="PASS" signature="initDriver()[pri:0, instance:com.sstech.TestCase.TestLogInFuctionality@4678c730]" name="initDriver" is-config="true" duration-ms="9485" started-at="2019-09-29T19:29:39Z" finished-at="2019-09-29T19:29:49Z">
+    <test name="Default test" duration-ms="11978" started-at="2019-10-09T01:00:38Z" finished-at="2019-10-09T01:00:50Z">
+      <class name="com.sstech.TestCase.TestLogOutFunctionality">
+        <test-method status="PASS" signature="initDriver()[pri:0, instance:com.sstech.TestCase.TestLogOutFunctionality@6f7fd0e6]" name="initDriver" is-config="true" duration-ms="7636" started-at="2019-10-09T01:00:38Z" finished-at="2019-10-09T01:00:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initDriver -->
-        <test-method status="PASS" signature="validateLoginFuctionalityUsingCorrectCredentials()[pri:0, instance:com.sstech.TestCase.TestLogInFuctionality@4678c730]" name="validateLoginFuctionalityUsingCorrectCredentials" duration-ms="2014" started-at="2019-09-29T19:29:49Z" finished-at="2019-09-29T19:29:51Z">
+        <test-method status="PASS" signature="initPageElements()[pri:0, instance:com.sstech.TestCase.TestLogOutFunctionality@6f7fd0e6]" name="initPageElements" is-config="true" duration-ms="47" started-at="2019-10-09T01:00:46Z" depends-on-methods="com.sstech.core.TestBase.initDriver" finished-at="2019-10-09T01:00:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginFuctionalityUsingCorrectCredentials -->
-      </class> <!-- com.sstech.TestCase.TestLogInFuctionality -->
+        </test-method> <!-- initPageElements -->
+        <test-method status="PASS" signature="validateLogoutFuctionality()[pri:0, instance:com.sstech.TestCase.TestLogOutFunctionality@6f7fd0e6]" name="validateLogoutFuctionality" duration-ms="4217" started-at="2019-10-09T01:00:46Z" finished-at="2019-10-09T01:00:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoutFuctionality -->
+      </class> <!-- com.sstech.TestCase.TestLogOutFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

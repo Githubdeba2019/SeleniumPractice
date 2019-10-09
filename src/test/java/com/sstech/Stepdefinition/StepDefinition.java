@@ -9,6 +9,7 @@ import com.sstech.common.Log;
 import com.sstech.common.PropertyLoader;
 import com.sstech.core.TestBase;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -18,7 +19,7 @@ public class StepDefinition extends TestBase{
 	public static ChromeDriver driver;
 	public static Logger myLog;
 	
-	
+	@Before
 	public static void initTest() throws Exception {
 		PropertyLoader.loadProperties();
 		myLog=Log.setupLog();

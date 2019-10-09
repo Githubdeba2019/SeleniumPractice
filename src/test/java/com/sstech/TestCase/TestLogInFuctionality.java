@@ -2,15 +2,25 @@ package com.sstech.TestCase;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.sstech.core.TestBase;
+import com.sstech.page.LogInPage;
+import com.sstech.page.WelcomePage;
 
 public class TestLogInFuctionality extends TestBase{
 	
-/*to install TestNG
-first add the librirary using pom.xml
-then install testNG in your eclipse*/
+	public static LogInPage loginpage= new LogInPage();
+	public static WelcomePage welcomepage= new WelcomePage();
+	
+	@BeforeTest
+	public static void initPageElements() {
+		loginpage.initPageElementDriver(driver);
+		welcomepage.initPageElementDriver(driver);
+	}
+	
+
 	
 	@Test()
 	public static void validateLoginFuctionalityUsingCorrectCredentials() {
